@@ -1,6 +1,11 @@
-h1 
-    {text-align: center;}
-#clock 
-    {text-align: center;
+h1 {
+    text-align: center;
+}
+#clock {
+    text-align: center;
     font-size: xx-large;
-    font-weight: bold;}
+    font-weight: bold;
+}
+p {
+    text-align: center;
+}

@@ -1,9 +1,4 @@
-var personChoice;
-var rightAnswers = 0;
-var wrongAnswers = 0;
-var unAnswered = 0;
-
-
+$(document).ready(function() {
 var allQuestions = [
    {
       question: "What are the maximum amount of clubs a person can have in their bag?",
@@ -118,14 +113,31 @@ console.log(allQuestions[7].question);
 console.log(allQuestions[8].question);
 console.log(allQuestions[9].question);
 function showQuestions() {
-   $("#quiz").html(allQuestions[0].question);
-   $("#quiz").text(allQuestions[1].question);
-   $("#quiz").text(allQuestions[2].question);
-   $("#quiz").text(allQuestions[3].question);
-   $("#quiz").text(allQuestions[4].question);
-   $("#quiz").text(allQuestions[5].question);
-   $("#quiz").text(allQuestions[6].question);
-   $("#quiz").text(allQuestions[7].question);
-   $("#quiz").text(allQuestions[8].question);
-   $("#quiz").text(allQuestions[9].question);
-}
+   $("#q1").append(allQuestions[0].question);
+   $("#q2").append(allQuestions[1].question);
+   $("#q3").append(allQuestions[2].question);
+   $("#q4").append(allQuestions[3].question);
+   $("#q5").append(allQuestions[4].question);
+   $("#q6").append(allQuestions[5].question);
+   $("#q7").append(allQuestions[6].question);
+   $("#q8").append(allQuestions[7].question);
+   $("#q9").append(allQuestions[8].question);
+   $("#q10").append(allQuestions[9].question);
+};
+$("#q1").append(showQuestions);
+
+function showAnswers() {
+   $("#a1").append(allQuestions[0].answers);
+   $("#a2").append(allQuestions[1].answers);
+   $("#a3").append(allQuestions[2].answers);
+   $("#a4").append(allQuestions[3].answers);
+   $("#a5").append(allQuestions[4].answers);
+   $("#a6").append(allQuestions[5].answers);
+   $("#a7").append(allQuestions[6].answers);
+   $("#a8").append(allQuestions[7].answers);
+   $("#a9").append(allQuestions[8].answers);
+   $("#a10").append(allQuestions[9].answers);
+};
+$("#a1").append(showAnswers);
+console.log(allQuestions[1].answers)
+})
